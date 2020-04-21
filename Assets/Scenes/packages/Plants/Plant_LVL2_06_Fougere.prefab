@@ -1,0 +1,423 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4278920999357876188
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4278920999357876129}
+  - component: {fileID: 4278920999357876190}
+  - component: {fileID: 4278920999357876191}
+  - component: {fileID: 4278920999357876128}
+  - component: {fileID: 4278920999357876131}
+  m_Layer: 9
+  m_Name: Plant_LVL2_06_Fougere
+  m_TagString: Plant
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4278920999357876129
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4278920999357876188}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.74, y: 2.2800002, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4779937404069858624}
+  - {fileID: 1171310910436455679}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &4278920999357876190
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4278920999357876188}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 2
+  m_Sprite: {fileID: 21300000, guid: 06e0eb4a91bd2424496bb3a115f0da62, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 7.54, y: 8}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!61 &4278920999357876191
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4278920999357876188}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 1}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.27}
+    oldSize: {x: 3.4133334, y: 3.4133334}
+    newSize: {x: 7.54, y: 8}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2}
+  m_EdgeRadius: 0
+--- !u!114 &4278920999357876128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4278920999357876188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8eddd676b5af8304f8cbec9d74d250bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IDPlant: 6
+  canFinishLevel: 0
+  plantLife: 50
+  isDead: 0
+  needForGoodCond: 35
+  needForSadCond: 25
+  plantStatutCond: 2
+  plantLevel: 0
+  timeForLvlUp: 10
+  canTryToLvlUp: 0
+  timerCount: 0
+  canBeGrab: 0
+  seedGO: {fileID: 0}
+  plantSprites:
+  - name: Dead
+    lvl0: {fileID: 21300000, guid: e662cc2e85eec2f4ca7ee797f75a400d, type: 3}
+    lvl1: {fileID: 21300000, guid: 0fc813354e0040b47b0f6a1b94d0d5e8, type: 3}
+    lvl2: {fileID: 0}
+  - name: Sad
+    lvl0: {fileID: 21300000, guid: b8451b37b49081546b250d88158b1719, type: 3}
+    lvl1: {fileID: 21300000, guid: ef2e5f737a3a9cc468fc57580eaab3b0, type: 3}
+    lvl2: {fileID: 0}
+  - name: Good
+    lvl0: {fileID: 21300000, guid: 06e0eb4a91bd2424496bb3a115f0da62, type: 3}
+    lvl1: {fileID: 21300000, guid: 984c41f2238854f43b878ffbdbc9cfc4, type: 3}
+    lvl2: {fileID: 0}
+  - name: Bloom
+    lvl0: {fileID: 21300000, guid: 06e0eb4a91bd2424496bb3a115f0da62, type: 3}
+    lvl1: {fileID: 21300000, guid: 984c41f2238854f43b878ffbdbc9cfc4, type: 3}
+    lvl2: {fileID: 21300000, guid: 5d72b5081b85d984ab92b6b84c4d5169, type: 3}
+  decayEverySeconds: 0.5
+  canDecay: 1
+  checkNeed: 0
+  checkIsOk: 0
+  plantNeeds:
+  - name: water
+    need: 0
+    has: 0
+    needCheck: 0
+    isOk: 0
+  - name: loam
+    need: 0
+    has: 0
+    needCheck: 0
+    isOk: 0
+  - name: Goat's Blood
+    need: 0
+    has: 0
+    needCheck: 0
+    isOk: 0
+  - name: Virgin's Tears
+    need: 1
+    has: 0
+    needCheck: 0
+    isOk: 0
+  - name: Graveyard Dirt
+    need: 0
+    has: 0
+    needCheck: 0
+    isOk: 0
+  - name: Goupil's Hairs
+    need: 1
+    has: 0
+    needCheck: 0
+    isOk: 0
+  - name: Toad's Drool
+    need: 0
+    has: 0
+    needCheck: 0
+    isOk: 0
+  - name: Eye of a Newt
+    need: 0
+    has: 0
+    needCheck: 0
+    isOk: 0
+  - name: Powder of Perlimpinpin
+    need: 0
+    has: 0
+    needCheck: 0
+    isOk: 0
+  - name: Coffee grounds
+    need: 0
+    has: 0
+    needCheck: 0
+    isOk: 0
+  - name: Natural fertilizer
+    need: 0
+    has: 0
+    needCheck: 0
+    isOk: 0
+  - name: Unicorn Skin
+    need: 0
+    has: 0
+    needCheck: 0
+    isOk: 0
+  particlesGood: {fileID: 4779937404069858631}
+  particlesHeal: {fileID: 1171310910436455672}
+--- !u!114 &4278920999357876131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4278920999357876188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 868ca4447352092428ed25fed0637ae9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hasWater: 0
+--- !u!1001 &51949616681683778
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4278920999357876129}
+    m_Modifications:
+    - target: {fileID: 4822563934167385602, guid: f16c82567bf5b6149af0d3d0ecc73f56,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4822563934167385602, guid: f16c82567bf5b6149af0d3d0ecc73f56,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4822563934167385602, guid: f16c82567bf5b6149af0d3d0ecc73f56,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.875
+      objectReference: {fileID: 0}
+    - target: {fileID: 4822563934167385602, guid: f16c82567bf5b6149af0d3d0ecc73f56,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4822563934167385602, guid: f16c82567bf5b6149af0d3d0ecc73f56,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4822563934167385602, guid: f16c82567bf5b6149af0d3d0ecc73f56,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4822563934167385602, guid: f16c82567bf5b6149af0d3d0ecc73f56,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4822563934167385602, guid: f16c82567bf5b6149af0d3d0ecc73f56,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4822563934167385602, guid: f16c82567bf5b6149af0d3d0ecc73f56,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4822563934167385602, guid: f16c82567bf5b6149af0d3d0ecc73f56,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4822563934167385602, guid: f16c82567bf5b6149af0d3d0ecc73f56,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4822563934167385604, guid: f16c82567bf5b6149af0d3d0ecc73f56,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4822563934167385605, guid: f16c82567bf5b6149af0d3d0ecc73f56,
+        type: 3}
+      propertyPath: m_Name
+      value: Particles_Plant_Good
+      objectReference: {fileID: 0}
+    - target: {fileID: 4822563934167385605, guid: f16c82567bf5b6149af0d3d0ecc73f56,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f16c82567bf5b6149af0d3d0ecc73f56, type: 3}
+--- !u!1 &4779937404069858631 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4822563934167385605, guid: f16c82567bf5b6149af0d3d0ecc73f56,
+    type: 3}
+  m_PrefabInstance: {fileID: 51949616681683778}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &4779937404069858624 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4822563934167385602, guid: f16c82567bf5b6149af0d3d0ecc73f56,
+    type: 3}
+  m_PrefabInstance: {fileID: 51949616681683778}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7936904013652787791
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4278920999357876129}
+    m_Modifications:
+    - target: {fileID: 9107643177438754480, guid: d18f6ab7f29fa93409868a93f0f697bd,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9107643177438754480, guid: d18f6ab7f29fa93409868a93f0f697bd,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9107643177438754480, guid: d18f6ab7f29fa93409868a93f0f697bd,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9107643177438754480, guid: d18f6ab7f29fa93409868a93f0f697bd,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9107643177438754480, guid: d18f6ab7f29fa93409868a93f0f697bd,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9107643177438754480, guid: d18f6ab7f29fa93409868a93f0f697bd,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9107643177438754480, guid: d18f6ab7f29fa93409868a93f0f697bd,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9107643177438754480, guid: d18f6ab7f29fa93409868a93f0f697bd,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9107643177438754480, guid: d18f6ab7f29fa93409868a93f0f697bd,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9107643177438754480, guid: d18f6ab7f29fa93409868a93f0f697bd,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9107643177438754480, guid: d18f6ab7f29fa93409868a93f0f697bd,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9107643177438754481, guid: d18f6ab7f29fa93409868a93f0f697bd,
+        type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9107643177438754486, guid: d18f6ab7f29fa93409868a93f0f697bd,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 9107643177438754487, guid: d18f6ab7f29fa93409868a93f0f697bd,
+        type: 3}
+      propertyPath: m_Name
+      value: Particles_Plant_Heart
+      objectReference: {fileID: 0}
+    - target: {fileID: 9107643177438754487, guid: d18f6ab7f29fa93409868a93f0f697bd,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d18f6ab7f29fa93409868a93f0f697bd, type: 3}
+--- !u!1 &1171310910436455672 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9107643177438754487, guid: d18f6ab7f29fa93409868a93f0f697bd,
+    type: 3}
+  m_PrefabInstance: {fileID: 7936904013652787791}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1171310910436455679 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9107643177438754480, guid: d18f6ab7f29fa93409868a93f0f697bd,
+    type: 3}
+  m_PrefabInstance: {fileID: 7936904013652787791}
+  m_PrefabAsset: {fileID: 0}
